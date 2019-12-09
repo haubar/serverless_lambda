@@ -1,0 +1,12 @@
+{
+  "name": "matcha-lambda",
+  "version": "1.0.0",
+  "description": "lambda for matchkon",
+  "main": "index.js",
+  "repository": "git@github.com:haubar/serverless_lambda.git",
+  "author": "haubar <haubarclack@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-offline": "^5.12.1"
+  }
+}

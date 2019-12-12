@@ -1,8 +1,8 @@
-
 require('dotenv').config()
+
 const mongoose = require('mongoose')
 
-const schema = mongoose.Schema({
+const model = mongoose.model(process.env.DB_DATABASE, {
     //基本抓取資訊
     id: String,
     shortcode: String,
@@ -21,17 +21,7 @@ const schema = mongoose.Schema({
     enable: Boolean,
     on_place: Boolean,
     created_date: String
-})
-mongoose.connect( process.env.DB_HOST ,{useNewUrlParser:true, useFindAndModify: false, useCreateIndex: true})
-
-const model = mongoose.model(process.env.DB_DATABASE, schema)
+});
 
 module.exports = model;
-
-
-
-
-
-
-
 
